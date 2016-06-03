@@ -2016,3 +2016,60 @@ Slowest Trees (cumulative)                    | Total (avg)
 CoffeeScriptFilter (2)                        | 43ms (21 ms)        
 Babel (13)                                    | 35ms (2 ms)         
 
+file added controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee___jb_tmp___
+file deleted controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee
+
+Build successful - 227ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 33ms                
+Babel                                         | 18ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 39ms (19 ms)        
+Babel (13)                                    | 38ms (2 ms)         
+
+file added controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee___jb_tmp___
+file deleted controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee
+
+Build successful - 294ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Babel                                         | 58ms                
+CoffeeScriptFilter                            | 28ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 94ms (7 ms)         
+CoffeeScriptFilter (2)                        | 32ms (16 ms)        
+Funnel: Addon JS (7)                          | 16ms (2 ms)         
+
+file added controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee___jb_tmp___
+file deleted controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee
+file added controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee___jb_tmp___
+file deleted controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee
+
+Build successful - 256ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 28ms                
+Babel                                         | 21ms                
+Babel                                         | 13ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 56ms (4 ms)         
+CoffeeScriptFilter (2)                        | 32ms (16 ms)        
+

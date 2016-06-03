@@ -55,11 +55,12 @@ define('frontend/controllers/articles/edit', ['exports', 'ember'], function (exp
   ArticlesNewController = _ember['default'].Controller.extend({
     actions: {
       update: function update() {
-        return this.model.save().then((function (_this) {
-          return function () {
-            return _this.transitionToRoute('articles');
-          };
-        })(this));
+        return this.store.find('model', param.id).then(function (model) {
+          this.model = model;
+          this.model.set('model.title');
+          this.model.set('model.text');
+          return this.model.save();
+        });
       }
     }
   });

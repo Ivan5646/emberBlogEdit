@@ -8673,3 +8673,111 @@ Completed 200 OK in 4ms (Views: 1.4ms)
 Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-03 18:10:10 +0600
 Processing by Api::V1::ArticlesController#index as JSON
 Completed 200 OK in 26ms (Views: 23.0ms)
+Started GET "/api/v1/articles/573c49047489071d899e61d2" for 127.0.0.1 at 2016-06-03 18:18:01 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c49047489071d899e61d2"}
+Completed 200 OK in 5ms (Views: 1.6ms)
+Started GET "/articles/edit/573c49047489071d899e61d2" for 127.0.0.1 at 2016-06-03 18:18:03 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/573c49047489071d899e61d2"}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 2.1ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-03 18:18:03 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-03 18:18:03 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-03 18:18:03 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-03 18:18:03 +0600
+Started GET "/api/v1/articles/573c49047489071d899e61d2" for 127.0.0.1 at 2016-06-03 18:18:03 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c49047489071d899e61d2"}
+Completed 200 OK in 4ms (Views: 1.4ms)
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-03 18:18:13 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 26ms (Views: 23.8ms)
+Started GET "/api/v1/articles/574ea0f774890745367aaf24" for 127.0.0.1 at 2016-06-03 18:18:17 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"574ea0f774890745367aaf24"}
+Completed 200 OK in 5ms (Views: 1.4ms)
+Started GET "/articles/edit/574ea0f774890745367aaf24" for 127.0.0.1 at 2016-06-03 18:18:22 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/574ea0f774890745367aaf24"}
+  Rendered inline template (0.4ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 2.1ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-03 18:18:22 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-03 18:18:22 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-03 18:18:22 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-03 18:18:22 +0600
+Started GET "/api/v1/articles/574ea0f774890745367aaf24" for 127.0.0.1 at 2016-06-03 18:18:22 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"574ea0f774890745367aaf24"}
+Completed 200 OK in 5ms (Views: 2.3ms)
+Started PUT "/api/v1/articles/574ea0f774890745367aaf24" for 127.0.0.1 at 2016-06-03 18:18:50 +0600
+Processing by Api::V1::ArticlesController#update as JSON
+  Parameters: {"article"=>{"title"=>"without text updated", "text"=>"updated"}, "id"=>"574ea0f774890745367aaf24"}
+Completed 200 OK in 323ms (Views: 2.0ms)
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-03 18:18:50 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 28ms (Views: 24.9ms)
+Started GET "/articles/574ea1947489077ec92d5105" for 127.0.0.1 at 2016-06-03 18:18:55 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/574ea1947489077ec92d5105"}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (0.9ms)
+Completed 200 OK in 2ms (Views: 1.9ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-03 18:18:55 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-03 18:18:55 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-03 18:18:55 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-03 18:18:55 +0600
+Started GET "/api/v1/articles/574ea1947489077ec92d5105" for 127.0.0.1 at 2016-06-03 18:18:56 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"574ea1947489077ec92d5105"}
+Completed 200 OK in 5ms (Views: 1.7ms)
+Started GET "/articles/574ea0f774890745367aaf24" for 127.0.0.1 at 2016-06-03 18:18:56 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/574ea0f774890745367aaf24"}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 2.1ms)
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-03 18:18:57 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-03 18:18:57 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-03 18:18:57 +0600
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-03 18:18:57 +0600
+Started GET "/api/v1/articles/574ea0f774890745367aaf24" for 127.0.0.1 at 2016-06-03 18:18:57 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"574ea0f774890745367aaf24"}
+Completed 200 OK in 4ms (Views: 1.3ms)
+Started GET "/" for 127.0.0.1 at 2016-06-03 18:32:08 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (0.9ms)
+Completed 200 OK in 2ms (Views: 1.9ms)
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-03 18:32:08 +0600
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-03 18:32:08 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-03 18:32:08 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-03 18:32:08 +0600
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-03 18:32:09 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 16ms (Views: 13.6ms)
+Started GET "/api/v1/articles/574d54707489073a652b3a9c" for 127.0.0.1 at 2016-06-03 18:32:21 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"574d54707489073a652b3a9c"}
+Completed 200 OK in 4ms (Views: 1.2ms)
+Started GET "/articles/edit/574d54707489073a652b3a9c" for 127.0.0.1 at 2016-06-03 18:32:26 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/574d54707489073a652b3a9c"}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (0.9ms)
+Completed 200 OK in 3ms (Views: 2.1ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-03 18:32:26 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-03 18:32:26 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-03 18:32:26 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-03 18:32:26 +0600
+Started GET "/api/v1/articles/574d54707489073a652b3a9c" for 127.0.0.1 at 2016-06-03 18:32:27 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"574d54707489073a652b3a9c"}
+Completed 200 OK in 4ms (Views: 1.5ms)
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-03 18:32:53 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 20ms (Views: 17.2ms)
