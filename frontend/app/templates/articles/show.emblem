@@ -1,0 +1,5 @@
+<h3>{{model.title}}</h3>
+<p>{{model.text}}</p>
+
+<p>{{#link-to 'articles.edit'}} Edit {{/link-to}}</p>
+

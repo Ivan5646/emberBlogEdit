@@ -1,0 +1,8 @@
+h3 Articles:
+
+each model as |article|
+  p
+    link-to 'articles.show' article.id
+      = article.title
+
+
