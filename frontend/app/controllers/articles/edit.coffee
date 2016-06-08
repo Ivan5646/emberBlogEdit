@@ -2,11 +2,9 @@
 
 ArticlesNewController = Ember.Controller.extend
   actions:
-    update: ->
-      @store.find('model',  param.id).then (@model) ->
-        @model.set('model.title');
-        @model.set('model.text');
-        @model.save();
+    edit: ->
+      @model.save(@model.title, @model.text).then =>
+        @transitionToRoute 'articles'
 
 
 `export default ArticlesNewController`

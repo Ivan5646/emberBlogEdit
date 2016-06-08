@@ -8781,3 +8781,749 @@ Completed 200 OK in 4ms (Views: 1.5ms)
 Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-03 18:32:53 +0600
 Processing by Api::V1::ArticlesController#index as JSON
 Completed 200 OK in 20ms (Views: 17.2ms)
+Started GET "/" for 127.0.0.1 at 2016-06-08 14:28:56 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend}
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (133287.9ms)
+Completed 500 Internal Server Error in 133741ms
+
+ActionView::Template::Error (:frontend has failed to build: Error: watch /home/mikhail/projects/emberBlogBack/frontend/app ENOSPC
+):
+  Error: watch frontend/app ENOSPC
+
+    at exports._errnoException (util.js:870:11)
+
+    at FSWatcher.start (fs.js:1234:19)
+
+    at Object.fs.watch (fs.js:1262:11)
+
+    at NodeWatcher.watchdir (frontend/node_modules/ember-cli/node_modules/sane/src/node_watcher.js:144:20)
+
+    at new NodeWatcher (frontend/node_modules/ember-cli/node_modules/sane/src/node_watcher.js:45:8)
+
+    at new sane (frontend/node_modules/ember-cli/node_modules/sane/index.js:17:12)
+
+    at EventEmitter.Watcher_addWatchDir [as addWatchDir] (frontend/node_modules/ember-cli/node_modules/broccoli-sane-watcher/index.js:93:17)
+
+    at frontend/node_modules/ember-cli/node_modules/ember-cli-broccoli/lib/builder.js:95:35
+
+    at lib$rsvp$$internal$$tryCatch (frontend/node_modules/ember-cli/node_modules/rsvp/dist/rsvp.js:1036:16)
+
+    at lib$rsvp$$internal$$invokeCallback (frontend/node_modules/ember-cli/node_modules/rsvp/dist/rsvp.js:1048:17)
+
+    at frontend/node_modules/ember-cli/node_modules/rsvp/dist/rsvp.js:331:11
+
+    at lib$rsvp$asap$$flush (frontend/node_modules/ember-cli/node_modules/rsvp/dist/rsvp.js:1198:9)
+
+    at nextTickCallbackWith0Args (node.js:420:9)
+
+    at process._tickCallback (node.js:349:13)
+
+  The broccoli plugin was instantiated at: 
+
+    at WatchedDir.Directory (frontend/node_modules/ember-cli/node_modules/broccoli-source/index.js:14:31)
+
+    at new WatchedDir (frontend/node_modules/ember-cli/node_modules/broccoli-source/index.js:58:13)
+
+    at EmberApp._initOptions (frontend/node_modules/ember-cli/lib/broccoli/ember-app.js:221:16)
+
+    at new EmberApp (frontend/node_modules/ember-cli/lib/broccoli/ember-app.js:93:8)
+
+    at module.exports (frontend/ember-cli-build.js:6:13)
+
+    at Class.module.exports.Task.extend.setupBroccoliBuilder (frontend/node_modules/ember-cli/lib/models/builder.js:55:19)
+
+    at Class.module.exports.Task.extend.init (frontend/node_modules/ember-cli/lib/models/builder.js:89:10)
+
+    at new Class (frontend/node_modules/ember-cli/node_modules/core-object/core-object.js:18:12)
+
+    at Class.module.exports.Task.extend.run (frontend/node_modules/ember-cli/lib/tasks/build-watch.js:17:16)
+
+    at frontend/node_modules/ember-cli/lib/commands/build.js:28:24
+
+    at lib$rsvp$$internal$$tryCatch (frontend/node_modules/ember-cli/node_modules/rsvp/dist/rsvp.js:1036:16)
+
+    at lib$rsvp$$internal$$invokeCallback (frontend/node_modules/ember-cli/node_modules/rsvp/dist/rsvp.js:1048:17)
+
+    at frontend/node_modules/ember-cli/node_modules/rsvp/dist/rsvp.js:331:11
+
+    at lib$rsvp$asap$$flush (frontend/node_modules/ember-cli/node_modules/rsvp/dist/rsvp.js:1198:9)
+
+    at nextTickCallbackWith0Args (node.js:420:9)
+
+    at process._tickCallback (node.js:349:13)
+
+
+
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.6ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (191.4ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (249.5ms)
+Started GET "/" for 127.0.0.1 at 2016-06-08 14:34:23 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend}
+  Rendered inline template (0.4ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (62893.5ms)
+Completed 200 OK in 62931ms (Views: 62910.3ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 14:35:26 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 14:35:26 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 14:35:26 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 14:35:26 +0600
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 14:35:34 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 761ms (Views: 704.0ms)
+Started GET "/api/v1/articles/573c49047489071d899e61d2" for 127.0.0.1 at 2016-06-08 14:35:37 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c49047489071d899e61d2"}
+Completed 200 OK in 22ms (Views: 1.5ms)
+Started GET "/articles/edit/573c49047489071d899e61d2" for 127.0.0.1 at 2016-06-08 14:36:01 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/573c49047489071d899e61d2"}
+  Rendered inline template (0.2ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (0.8ms)
+Completed 200 OK in 2ms (Views: 1.6ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 14:36:01 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 14:36:01 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 14:36:01 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 14:36:01 +0600
+Started GET "/api/v1/articles/573c49047489071d899e61d2" for 127.0.0.1 at 2016-06-08 14:36:01 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c49047489071d899e61d2"}
+Completed 200 OK in 4ms (Views: 1.3ms)
+Started GET "/" for 127.0.0.1 at 2016-06-08 14:50:37 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (0.9ms)
+Completed 200 OK in 3ms (Views: 2.1ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 14:50:37 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 14:50:37 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 14:50:37 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 14:50:37 +0600
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 14:50:39 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 18ms (Views: 15.0ms)
+Started GET "/api/v1/articles/573c49047489071d899e61d2" for 127.0.0.1 at 2016-06-08 14:50:41 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c49047489071d899e61d2"}
+Completed 200 OK in 28ms (Views: 1.6ms)
+Started GET "/articles/edit/573c49047489071d899e61d2" for 127.0.0.1 at 2016-06-08 14:50:45 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/573c49047489071d899e61d2"}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 2.3ms)
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 14:50:45 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 14:50:45 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 14:50:45 +0600
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 14:50:45 +0600
+Started GET "/api/v1/articles/573c49047489071d899e61d2" for 127.0.0.1 at 2016-06-08 14:50:45 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c49047489071d899e61d2"}
+Completed 200 OK in 4ms (Views: 1.2ms)
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 14:50:53 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 20ms (Views: 17.1ms)
+Started GET "/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 14:51:06 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/573c4c3f7489071d899e61d6"}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 2.2ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 14:51:06 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 14:51:06 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 14:51:06 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 14:51:06 +0600
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 14:51:06 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 4ms (Views: 1.2ms)
+Started GET "/articles/edit/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 14:51:12 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/573c4c3f7489071d899e61d6"}
+  Rendered inline template (0.4ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.2ms)
+Completed 200 OK in 3ms (Views: 2.5ms)
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 14:51:12 +0600
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 14:51:12 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 14:51:12 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 14:51:12 +0600
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 14:51:13 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 6ms (Views: 1.8ms)
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 14:51:36 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 32ms (Views: 27.8ms)
+Started GET "/articles" for 127.0.0.1 at 2016-06-08 14:51:52 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles"}
+  Rendered inline template (0.2ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (0.6ms)
+Completed 200 OK in 2ms (Views: 1.7ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 14:51:52 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 14:51:52 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 14:51:52 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 14:51:52 +0600
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 14:51:52 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 21ms (Views: 17.9ms)
+Started GET "/" for 127.0.0.1 at 2016-06-08 15:26:54 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend}
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (2.5ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (:frontend has failed to build: [stdin]:5:50: error: unexpected string
+):
+  [stdin]:5:50: error: unexpected string
+
+      @store.findRecord('article', param.id).then ('article') ->
+
+                                                   ^^^^^^^^^
+
+  The broccoli plugin was instantiated at: 
+
+    at CoffeeScriptFilter.Plugin (frontend/node_modules/ember-cli-coffeescript/node_modules/broccoli-coffee/node_modules/broccoli-filter/node_modules/broccoli-plugin/index.js:7:31)
+
+    at CoffeeScriptFilter.Filter [as constructor] (frontend/node_modules/ember-cli-coffeescript/node_modules/broccoli-coffee/node_modules/broccoli-filter/index.js:34:10)
+
+    at new CoffeeScriptFilter (frontend/node_modules/ember-cli-coffeescript/node_modules/broccoli-coffee/index.js:9:10)
+
+    at CoffeeScriptFilter (frontend/node_modules/ember-cli-coffeescript/node_modules/broccoli-coffee/index.js:8:53)
+
+    at CoffeePreprocessor.toTree (frontend/node_modules/ember-cli-coffeescript/lib/coffee-preprocessor.js:23:10)
+
+    at frontend/node_modules/ember-cli/node_modules/ember-cli-preprocess-registry/preprocessors.js:184:26
+
+    at Array.forEach (native)
+
+    at processPlugins (frontend/node_modules/ember-cli/node_modules/ember-cli-preprocess-registry/preprocessors.js:182:11)
+
+    at module.exports.preprocessJs (frontend/node_modules/ember-cli/node_modules/ember-cli-preprocess-registry/preprocessors.js:175:10)
+
+    at EmberApp.appAndDependencies (frontend/node_modules/ember-cli/lib/broccoli/ember-app.js:1022:25)
+
+    at EmberApp.javascript (frontend/node_modules/ember-cli/lib/broccoli/ember-app.js:1137:34)
+
+    at EmberApp.toArray (frontend/node_modules/ember-cli/lib/broccoli/ember-app.js:1542:10)
+
+    at EmberApp.toTree (frontend/node_modules/ember-cli/lib/broccoli/ember-app.js:1564:30)
+
+    at module.exports (frontend/ember-cli-build.js:23:14)
+
+    at Class.module.exports.Task.extend.setupBroccoliBuilder (frontend/node_modules/ember-cli/lib/models/builder.js:55:19)
+
+    at Class.module.exports.Task.extend.init (frontend/node_modules/ember-cli/lib/models/builder.js:89:10)
+
+    at new Class (frontend/node_modules/ember-cli/node_modules/core-object/core-object.js:18:12)
+
+    at Class.module.exports.Task.extend.run (frontend/node_modules/ember-cli/lib/tasks/build-watch.js:17:16)
+
+    at frontend/node_modules/ember-cli/lib/commands/build.js:28:24
+
+    at lib$rsvp$$internal$$tryCatch (frontend/node_modules/ember-cli/node_modules/rsvp/dist/rsvp.js:1036:16)
+
+    at lib$rsvp$$internal$$invokeCallback (frontend/node_modules/ember-cli/node_modules/rsvp/dist/rsvp.js:1048:17)
+
+    at frontend/node_modules/ember-cli/node_modules/rsvp/dist/rsvp.js:331:11
+
+    at lib$rsvp$asap$$flush (frontend/node_modules/ember-cli/node_modules/rsvp/dist/rsvp.js:1198:9)
+
+    at nextTickCallbackWith0Args (node.js:420:9)
+
+    at process._tickCallback (node.js:349:13)
+
+
+
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (118.6ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (102.9ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (132.4ms)
+Started GET "/" for 127.0.0.1 at 2016-06-08 15:29:04 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.2ms)
+Completed 200 OK in 3ms (Views: 2.5ms)
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 15:29:04 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:29:04 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 15:29:04 +0600
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:29:04 +0600
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 15:29:06 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 18ms (Views: 15.2ms)
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:29:14 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 5ms (Views: 1.7ms)
+Started GET "/articles/edit/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:29:18 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/573c4c3f7489071d899e61d6"}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 2.1ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:29:18 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 15:29:18 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:29:18 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 15:29:18 +0600
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:29:18 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 4ms (Views: 1.1ms)
+Started GET "/articles/edit/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:29:27 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/573c4c3f7489071d899e61d6"}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 2.1ms)
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 15:29:27 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:29:27 +0600
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:29:27 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 15:29:27 +0600
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:29:27 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 5ms (Views: 1.4ms)
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:33:56 +0600
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:33:56 +0600
+Started GET "/assets/vendor.map" for 127.0.0.1 at 2016-06-08 15:33:56 +0600
+Started GET "/assets/frontend.map" for 127.0.0.1 at 2016-06-08 15:33:56 +0600
+Started GET "/" for 127.0.0.1 at 2016-06-08 15:35:34 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:35:34 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 15:35:34 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 15:35:34 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:35:34 +0600
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 15:35:35 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 16ms (Views: 13.9ms)
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:35:39 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 6ms (Views: 1.7ms)
+Started GET "/articles/edit/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:35:41 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/573c4c3f7489071d899e61d6"}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:35:41 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 15:35:41 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 15:35:41 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:35:41 +0600
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:35:42 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 4ms (Views: 1.2ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:35:46 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:35:46 +0600
+Started GET "/assets/vendor.map" for 127.0.0.1 at 2016-06-08 15:35:46 +0600
+Started GET "/assets/frontend.map" for 127.0.0.1 at 2016-06-08 15:35:46 +0600
+Started GET "/" for 127.0.0.1 at 2016-06-08 15:36:37 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend}
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (2.4ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (:frontend has failed to build: [stdin]:6:8: error: unexpected @
+):
+  [stdin]:6:8: error: unexpected @
+
+        @@model.set('model.title');
+
+         ^
+
+  The broccoli plugin was instantiated at: 
+
+    at CoffeeScriptFilter.Plugin (frontend/node_modules/ember-cli-coffeescript/node_modules/broccoli-coffee/node_modules/broccoli-filter/node_modules/broccoli-plugin/index.js:7:31)
+
+    at CoffeeScriptFilter.Filter [as constructor] (frontend/node_modules/ember-cli-coffeescript/node_modules/broccoli-coffee/node_modules/broccoli-filter/index.js:34:10)
+
+    at new CoffeeScriptFilter (frontend/node_modules/ember-cli-coffeescript/node_modules/broccoli-coffee/index.js:9:10)
+
+    at CoffeeScriptFilter (frontend/node_modules/ember-cli-coffeescript/node_modules/broccoli-coffee/index.js:8:53)
+
+    at CoffeePreprocessor.toTree (frontend/node_modules/ember-cli-coffeescript/lib/coffee-preprocessor.js:23:10)
+
+    at frontend/node_modules/ember-cli/node_modules/ember-cli-preprocess-registry/preprocessors.js:184:26
+
+    at Array.forEach (native)
+
+    at processPlugins (frontend/node_modules/ember-cli/node_modules/ember-cli-preprocess-registry/preprocessors.js:182:11)
+
+    at module.exports.preprocessJs (frontend/node_modules/ember-cli/node_modules/ember-cli-preprocess-registry/preprocessors.js:175:10)
+
+    at EmberApp.appAndDependencies (frontend/node_modules/ember-cli/lib/broccoli/ember-app.js:1022:25)
+
+    at EmberApp.javascript (frontend/node_modules/ember-cli/lib/broccoli/ember-app.js:1137:34)
+
+    at EmberApp.toArray (frontend/node_modules/ember-cli/lib/broccoli/ember-app.js:1542:10)
+
+    at EmberApp.toTree (frontend/node_modules/ember-cli/lib/broccoli/ember-app.js:1564:30)
+
+    at module.exports (frontend/ember-cli-build.js:23:14)
+
+    at Class.module.exports.Task.extend.setupBroccoliBuilder (frontend/node_modules/ember-cli/lib/models/builder.js:55:19)
+
+    at Class.module.exports.Task.extend.init (frontend/node_modules/ember-cli/lib/models/builder.js:89:10)
+
+    at new Class (frontend/node_modules/ember-cli/node_modules/core-object/core-object.js:18:12)
+
+    at Class.module.exports.Task.extend.run (frontend/node_modules/ember-cli/lib/tasks/build-watch.js:17:16)
+
+    at frontend/node_modules/ember-cli/lib/commands/build.js:28:24
+
+    at lib$rsvp$$internal$$tryCatch (frontend/node_modules/ember-cli/node_modules/rsvp/dist/rsvp.js:1036:16)
+
+    at lib$rsvp$$internal$$invokeCallback (frontend/node_modules/ember-cli/node_modules/rsvp/dist/rsvp.js:1048:17)
+
+    at frontend/node_modules/ember-cli/node_modules/rsvp/dist/rsvp.js:331:11
+
+    at lib$rsvp$asap$$flush (frontend/node_modules/ember-cli/node_modules/rsvp/dist/rsvp.js:1198:9)
+
+    at nextTickCallbackWith0Args (node.js:420:9)
+
+    at process._tickCallback (node.js:349:13)
+
+
+
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.9ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.4ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.8ms)
+Started GET "/" for 127.0.0.1 at 2016-06-08 15:36:52 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend}
+  Rendered inline template (0.4ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.2ms)
+Completed 200 OK in 3ms (Views: 2.6ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:36:52 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 15:36:52 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:36:52 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 15:36:52 +0600
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 15:36:56 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 20ms (Views: 16.8ms)
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:36:59 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 5ms (Views: 1.7ms)
+Started GET "/articles/edit/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:37:01 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/573c4c3f7489071d899e61d6"}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (0.9ms)
+Completed 200 OK in 2ms (Views: 1.8ms)
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:37:01 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 15:37:01 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 15:37:01 +0600
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:37:01 +0600
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:37:01 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 4ms (Views: 1.3ms)
+Started GET "/articles/edit/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:37:08 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/573c4c3f7489071d899e61d6"}
+  Rendered inline template (0.5ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.3ms)
+Completed 200 OK in 3ms (Views: 2.6ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:37:08 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 15:37:08 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 15:37:08 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:37:08 +0600
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:37:08 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 4ms (Views: 1.2ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:37:11 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:37:11 +0600
+Started GET "/assets/vendor.map" for 127.0.0.1 at 2016-06-08 15:37:11 +0600
+Started GET "/assets/frontend.map" for 127.0.0.1 at 2016-06-08 15:37:11 +0600
+Started GET "/" for 127.0.0.1 at 2016-06-08 15:38:12 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 2.1ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:38:12 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:38:12 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 15:38:12 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 15:38:12 +0600
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 15:38:13 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 17ms (Views: 14.7ms)
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:38:16 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 5ms (Views: 1.6ms)
+Started GET "/articles/edit/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:38:18 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/573c4c3f7489071d899e61d6"}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 2.1ms)
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:38:18 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 15:38:18 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 15:38:18 +0600
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:38:18 +0600
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:38:18 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 4ms (Views: 1.3ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:38:21 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:38:21 +0600
+Started GET "/assets/vendor.map" for 127.0.0.1 at 2016-06-08 15:38:21 +0600
+Started GET "/assets/frontend.map" for 127.0.0.1 at 2016-06-08 15:38:21 +0600
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 15:42:13 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 20ms (Views: 17.6ms)
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:42:16 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 5ms (Views: 1.6ms)
+Started GET "/articles/edit/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:42:17 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/573c4c3f7489071d899e61d6"}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 2.1ms)
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:42:17 +0600
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:42:17 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 15:42:17 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 15:42:17 +0600
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:42:18 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 5ms (Views: 1.3ms)
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:42:21 +0600
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:42:21 +0600
+Started GET "/assets/vendor.map" for 127.0.0.1 at 2016-06-08 15:42:21 +0600
+Started GET "/assets/frontend.map" for 127.0.0.1 at 2016-06-08 15:42:21 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:54:32 +0600
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:54:32 +0600
+Started GET "/assets/vendor.map" for 127.0.0.1 at 2016-06-08 15:54:32 +0600
+Started GET "/assets/frontend.map" for 127.0.0.1 at 2016-06-08 15:54:32 +0600
+Started GET "/" for 127.0.0.1 at 2016-06-08 15:58:05 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms)
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:58:05 +0600
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:58:05 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 15:58:05 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 15:58:05 +0600
+Started GET "/assets/frontend.map" for 127.0.0.1 at 2016-06-08 15:58:05 +0600
+Started GET "/assets/vendor.map" for 127.0.0.1 at 2016-06-08 15:58:05 +0600
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 15:58:06 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 19ms (Views: 15.7ms)
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:58:09 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 6ms (Views: 1.8ms)
+Started GET "/articles/edit/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:58:11 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/573c4c3f7489071d899e61d6"}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:58:11 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:58:11 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 15:58:11 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 15:58:11 +0600
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 15:58:11 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 4ms (Views: 1.3ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 15:58:14 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 15:58:14 +0600
+Started GET "/assets/vendor.map" for 127.0.0.1 at 2016-06-08 15:58:14 +0600
+Started GET "/assets/frontend.map" for 127.0.0.1 at 2016-06-08 15:58:14 +0600
+Started GET "/" for 127.0.0.1 at 2016-06-08 16:14:12 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.3ms)
+Completed 200 OK in 3ms (Views: 2.4ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 16:14:12 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 16:14:12 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 16:14:12 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 16:14:12 +0600
+Started GET "/assets/vendor.map" for 127.0.0.1 at 2016-06-08 16:14:13 +0600
+Started GET "/assets/frontend.map" for 127.0.0.1 at 2016-06-08 16:14:13 +0600
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 16:14:14 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 13ms (Views: 11.6ms)
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 16:14:16 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 5ms (Views: 1.5ms)
+Started GET "/articles/edit/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 16:14:18 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/573c4c3f7489071d899e61d6"}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 2.1ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 16:14:18 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 16:14:18 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 16:14:18 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 16:14:18 +0600
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 16:14:19 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 4ms (Views: 1.2ms)
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 16:14:22 +0600
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 16:14:22 +0600
+Started GET "/assets/vendor.map" for 127.0.0.1 at 2016-06-08 16:14:22 +0600
+Started GET "/assets/frontend.map" for 127.0.0.1 at 2016-06-08 16:14:22 +0600
+Started GET "/articles/" for 127.0.0.1 at 2016-06-08 16:17:29 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles"}
+  Rendered inline template (0.4ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.1ms)
+Completed 200 OK in 3ms (Views: 2.5ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 16:17:29 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 16:17:29 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 16:17:29 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 16:17:29 +0600
+Started GET "/assets/vendor.map" for 127.0.0.1 at 2016-06-08 16:17:29 +0600
+Started GET "/assets/frontend.map" for 127.0.0.1 at 2016-06-08 16:17:29 +0600
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 16:17:29 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 19ms (Views: 16.9ms)
+Started GET "/" for 127.0.0.1 at 2016-06-08 16:17:33 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 16:17:33 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 16:17:33 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 16:17:33 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 16:17:33 +0600
+Started GET "/assets/vendor.map" for 127.0.0.1 at 2016-06-08 16:17:33 +0600
+Started GET "/assets/frontend.map" for 127.0.0.1 at 2016-06-08 16:17:33 +0600
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 16:17:34 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 19ms (Views: 16.7ms)
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 16:17:37 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 5ms (Views: 1.6ms)
+Started GET "/articles/edit/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 16:17:38 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/573c4c3f7489071d899e61d6"}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 16:17:38 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 16:17:38 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 16:17:38 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 16:17:38 +0600
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 16:17:39 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 4ms (Views: 1.2ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 16:17:41 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 16:17:41 +0600
+Started GET "/assets/vendor.map" for 127.0.0.1 at 2016-06-08 16:17:41 +0600
+Started GET "/assets/frontend.map" for 127.0.0.1 at 2016-06-08 16:17:41 +0600
+Started GET "/" for 127.0.0.1 at 2016-06-08 16:19:21 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 16:19:21 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 16:19:21 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 16:19:21 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 16:19:21 +0600
+Started GET "/assets/vendor.map" for 127.0.0.1 at 2016-06-08 16:19:22 +0600
+Started GET "/assets/frontend.map" for 127.0.0.1 at 2016-06-08 16:19:22 +0600
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 16:19:23 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 19ms (Views: 15.9ms)
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 16:19:25 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 4ms (Views: 1.4ms)
+Started GET "/articles/edit/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 16:19:27 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/573c4c3f7489071d899e61d6"}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (1.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 16:19:27 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 16:19:27 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 16:19:27 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 16:19:27 +0600
+Started GET "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 16:19:27 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 4ms (Views: 1.2ms)
+Started PUT "/api/v1/articles/573c4c3f7489071d899e61d6" for 127.0.0.1 at 2016-06-08 16:19:41 +0600
+Processing by Api::V1::ArticlesController#update as JSON
+  Parameters: {"article"=>{"title"=>"another one edited", "text"=>" another text edited"}, "id"=>"573c4c3f7489071d899e61d6"}
+Completed 200 OK in 1434ms (Views: 2.0ms)
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 16:19:42 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 21ms (Views: 18.0ms)
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 16:20:10 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 28ms (Views: 25.4ms)
+Started GET "/api/v1/articles/574edf2b74890717a4c00df5" for 127.0.0.1 at 2016-06-08 16:20:13 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"574edf2b74890717a4c00df5"}
+Completed 200 OK in 5ms (Views: 1.7ms)
+Started GET "/articles/edit/574edf2b74890717a4c00df5" for 127.0.0.1 at 2016-06-08 16:20:19 +0600
+Processing by EmberCli::EmberController#index as HTML
+  Parameters: {"ember_app"=>:frontend, "rest"=>"articles/edit/574edf2b74890717a4c00df5"}
+  Rendered inline template (0.3ms)
+  Rendered /home/mikhail/.rvm/gems/ruby-2.2.3/gems/ember-cli-rails-0.7.2/app/views/ember_cli/ember/index.html.erb (0.9ms)
+Completed 200 OK in 2ms (Views: 2.0ms)
+Started GET "/assets/vendor.css" for 127.0.0.1 at 2016-06-08 16:20:19 +0600
+Started GET "/assets/frontend.css" for 127.0.0.1 at 2016-06-08 16:20:19 +0600
+Started GET "/assets/vendor.js" for 127.0.0.1 at 2016-06-08 16:20:19 +0600
+Started GET "/assets/frontend.js" for 127.0.0.1 at 2016-06-08 16:20:19 +0600
+Started GET "/api/v1/articles/574edf2b74890717a4c00df5" for 127.0.0.1 at 2016-06-08 16:20:19 +0600
+Processing by Api::V1::ArticlesController#show as JSON
+  Parameters: {"id"=>"574edf2b74890717a4c00df5"}
+Completed 200 OK in 5ms (Views: 2.0ms)
+Started PUT "/api/v1/articles/574edf2b74890717a4c00df5" for 127.0.0.1 at 2016-06-08 16:20:33 +0600
+Processing by Api::V1::ArticlesController#update as JSON
+  Parameters: {"article"=>{"title"=>"This is the Title edited", "text"=>"This is the text of the Article. edited"}, "id"=>"574edf2b74890717a4c00df5"}
+Completed 200 OK in 7ms (Views: 1.9ms)
+Started GET "/api/v1/articles" for 127.0.0.1 at 2016-06-08 16:20:33 +0600
+Processing by Api::V1::ArticlesController#index as JSON
+Completed 200 OK in 20ms (Views: 17.0ms)

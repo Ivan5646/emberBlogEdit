@@ -2073,3 +2073,288 @@ Slowest Trees (cumulative)                    | Total (avg)
 Babel (13)                                    | 56ms (4 ms)         
 CoffeeScriptFilter (2)                        | 32ms (16 ms)        
 
+version: 2.4.2
+Could not start watchman; falling back to NodeWatcher for file system events.
+Visit http://www.ember-cli.com/user-guide/#watchman for more info.
+Buildingversion: 2.4.2
+Could not start watchman; falling back to NodeWatcher for file system events.
+Visit http://www.ember-cli.com/user-guide/#watchman for more info.
+BuildingBuilding.Building..Building...BuildingBuilding.Building..Building...BuildingBuilding.Building..Building...BuildingBuilding.Building..Building...BuildingBuilding.Building..Building...BuildingBuilding.Building..Building...BuildingBuilding.Building..Building...BuildingBuilding.Building...
+
+Build successful - 23137ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Babel                                         | 3698ms              
+Babel                                         | 3217ms              
+Babel                                         | 2803ms              
+JSHint app- QUnit                             | 2389ms              
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 11935ms (918 ms)    
+JSHint app- QUnit (1)                         | 2389ms              
+
+file added templates/articles/edit.emblem___jb_tmp___
+file changed templates/articles/edit.emblem___jb_tmp___
+file deleted templates/articles/edit.emblem___jb_tmp___
+file changed templates/articles/edit.emblem
+file added controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee___jb_tmp___
+file deleted controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee
+
+Build successful - 575ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Babel                                         | 77ms                
+CoffeeScriptFilter                            | 54ms                
+TreeMerger (stylesAndVendor)                  | 41ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 112ms (8 ms)        
+CoffeeScriptFilter (2)                        | 59ms (29 ms)        
+TreeMerger (stylesAndVendor) (1)              | 41ms                
+
+file added controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee___jb_tmp___
+file deleted controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee
+
+Build successful - 560ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 69ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 75ms (37 ms)        
+Babel (13)                                    | 74ms (5 ms)         
+Funnel: Addon JS (7)                          | 45ms (6 ms)         
+
+file added routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee___jb_tmp___
+file deleted routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee
+file added controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee___jb_tmp___
+file deleted controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee
+file added routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee___jb_tmp___
+file deleted routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee
+
+Build successful - 338ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Babel                                         | 32ms                
+CoffeeScriptFilter                            | 26ms                
+Addon#treeFor (ember-cli-app-version - ven... | 23ms                
+Addon#treeFor (ember-data - styles)           | 19ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 54ms (4 ms)         
+CoffeeScriptFilter (2)                        | 30ms (15 ms)        
+Addon#treeFor (ember-cli-app-version -... (1) | 23ms                
+Addon#treeFor (ember-data - styles) (1)       | 19ms                
+
+file added routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee___jb_tmp___
+file deleted routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee
+
+Build successful - 401ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 37ms                
+Babel                                         | 35ms                
+Addon#treeFor (ember-resolver - vendor)       | 20ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 74ms (5 ms)         
+CoffeeScriptFilter (2)                        | 45ms (22 ms)        
+Addon#treeFor (ember-resolver - vendor) (1)   | 20ms                
+
+file added routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee___jb_tmp___
+file deleted routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee
+file added routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee___jb_tmp___
+file deleted routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee
+
+Build successful - 267ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 32ms                
+CoffeeScriptFilter                            | 21ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 53ms (26 ms)        
+Babel (13)                                    | 30ms (2 ms)         
+Funnel: Addon JS (7)                          | 13ms (1 ms)         
+
+file added routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee___jb_tmp___
+file deleted routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee
+
+Build successful - 314ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+SourceMapConcat: Concat: App                  | 64ms                
+CoffeeScriptFilter                            | 42ms                
+Babel                                         | 28ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Concat: App (1)              | 64ms                
+Babel (13)                                    | 48ms (3 ms)         
+CoffeeScriptFilter (2)                        | 46ms (23 ms)        
+TemplateCompiler (3)                          | 18ms (6 ms)         
+
+file added routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee___jb_tmp___
+file deleted routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee
+file added controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee___jb_tmp___
+file deleted controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee
+
+Build successful - 290ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 44ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 51ms (25 ms)        
+Babel (13)                                    | 41ms (3 ms)         
+
+file added routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee___jb_tmp___
+file deleted routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee
+file added controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee___jb_tmp___
+file deleted controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee
+
+Build successful - 693ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 76ms                
+TreeMerger (stylesAndVendor)                  | 64ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 84ms (42 ms)        
+TreeMerger (stylesAndVendor) (1)              | 64ms                
+Babel (13)                                    | 54ms (4 ms)         
+
+file added routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee___jb_tmp___
+file deleted routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee
+
+Build successful - 314ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 50ms                
+Addon#treeFor (ember-cli-app-version - pub... | 18ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 56ms (28 ms)        
+Babel (13)                                    | 33ms (2 ms)         
+Addon#treeFor (ember-cli-app-version -... (1) | 18ms                
+
+file added routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee___jb_tmp___
+file deleted routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee
+
+Build successful - 316ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Addon#compileAddon(ember-load-initializers)   | 43ms                
+CoffeeScriptFilter                            | 30ms                
+Babel                                         | 23ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 53ms (4 ms)         
+Addon#compileAddon(ember-load-initiali... (1) | 43ms                
+CoffeeScriptFilter (2)                        | 35ms (17 ms)        
+
+file added routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee___jb_tmp___
+file deleted routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee
+
+Build successful - 207ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 28ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 32ms (16 ms)        
+Babel (13)                                    | 23ms (1 ms)         
+Funnel: Addon JS (7)                          | 10ms (1 ms)         
+
+file added routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee___jb_tmp___
+file deleted routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee
+
+Build successful - 219ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 53ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 56ms (28 ms)        
+Babel (13)                                    | 29ms (2 ms)         
+
+file added routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee___jb_tmp___
+file deleted routes/articles/edit.coffee___jb_tmp___
+file changed routes/articles/edit.coffee
+file added controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee___jb_tmp___
+file deleted controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee
+
+Build successful - 263ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 35ms                
+Babel                                         | 31ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 54ms (4 ms)         
+CoffeeScriptFilter (2)                        | 39ms (19 ms)        
+

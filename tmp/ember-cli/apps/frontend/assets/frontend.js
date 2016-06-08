@@ -54,13 +54,12 @@ define('frontend/controllers/articles/edit', ['exports', 'ember'], function (exp
 
   ArticlesNewController = _ember['default'].Controller.extend({
     actions: {
-      update: function update() {
-        return this.store.find('model', param.id).then(function (model) {
-          this.model = model;
-          this.model.set('model.title');
-          this.model.set('model.text');
-          return this.model.save();
-        });
+      edit: function edit() {
+        return this.model.save(this.model.title, this.model.text).then((function (_this) {
+          return function () {
+            return _this.transitionToRoute('articles');
+          };
+        })(this));
       }
     }
   });
@@ -533,7 +532,7 @@ define("frontend/templates/articles/edit", ["exports"], function (exports) {
           },
           "end": {
             "line": 1,
-            "column": 284
+            "column": 282
           }
         },
         "moduleName": "frontend/templates/articles/edit.hbs"
@@ -587,7 +586,7 @@ define("frontend/templates/articles/edit", ["exports"], function (exports) {
         morphs[4] = dom.createMorphAt(dom.childAt(element0, [1]), 1, 1);
         return morphs;
       },
-      statements: [["content", "customField", ["loc", [null, [1, 13], [1, 28]]]], ["element", "action", ["update"], ["on", "submit"], ["loc", [null, [1, 34], [1, 65]]]], ["attribute", "class", ["concat", ["field ", ["subexpr", "if", [["get", "model.errors.title", ["loc", [null, [1, 89], [1, 107]]]], "error"], [], ["loc", [null, [1, 84], [1, 117]]]]]]], ["inline", "input", [], ["value", ["subexpr", "@mut", [["get", "model.title", ["loc", [null, [1, 153], [1, 164]]]]], [], []]], ["loc", [null, [1, 139], [1, 166]]]], ["inline", "input", [], ["value", ["subexpr", "@mut", [["get", "model.text", ["loc", [null, [1, 224], [1, 234]]]]], [], []]], ["loc", [null, [1, 210], [1, 236]]]]],
+      statements: [["content", "customField", ["loc", [null, [1, 13], [1, 28]]]], ["element", "action", ["edit"], ["on", "submit"], ["loc", [null, [1, 34], [1, 63]]]], ["attribute", "class", ["concat", ["field ", ["subexpr", "if", [["get", "model.errors.title", ["loc", [null, [1, 87], [1, 105]]]], "error"], [], ["loc", [null, [1, 82], [1, 115]]]]]]], ["inline", "input", [], ["value", ["subexpr", "@mut", [["get", "model.title", ["loc", [null, [1, 151], [1, 162]]]]], [], []]], ["loc", [null, [1, 137], [1, 164]]]], ["inline", "input", [], ["value", ["subexpr", "@mut", [["get", "model.text", ["loc", [null, [1, 222], [1, 232]]]]], [], []]], ["loc", [null, [1, 208], [1, 234]]]]],
       locals: [],
       templates: []
     };
@@ -991,7 +990,7 @@ define("frontend/templates/components/article-row", ["exports"], function (expor
 /* jshint ignore:start */
 
 define('frontend/config/environment', ['ember'], function(Ember) {
-  return { 'default': {"modulePrefix":"frontend","environment":"development","baseURL":"/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"name":"frontend","version":"0.0.0+"},"exportApplicationGlobal":true}};
+  return { 'default': {"modulePrefix":"frontend","environment":"development","baseURL":"/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"name":"frontend","version":"0.0.0+f8e16761"},"exportApplicationGlobal":true}};
 });
 
 /* jshint ignore:end */
@@ -999,7 +998,7 @@ define('frontend/config/environment', ['ember'], function(Ember) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("frontend/app")["default"].create({"name":"frontend","version":"0.0.0+"});
+  require("frontend/app")["default"].create({"name":"frontend","version":"0.0.0+f8e16761"});
 }
 
 /* jshint ignore:end */

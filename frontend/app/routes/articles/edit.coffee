@@ -4,4 +4,5 @@ ArticlesRoute = Ember.Route.extend
   model: (param) ->
     @store.findRecord('article', param.id);
 
+
 `export default ArticlesRoute`

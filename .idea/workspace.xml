@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0069d8eb-bd30-455b-abee-a5c552e8064b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/app/controllers/articles/edit.coffee" afterPath="$PROJECT_DIR$/frontend/app/controllers/articles/edit.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/app/routes/articles/edit.coffee" afterPath="$PROJECT_DIR$/frontend/app/routes/articles/edit.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/app/templates/articles/edit.emblem" afterPath="$PROJECT_DIR$/frontend/app/templates/articles/edit.emblem" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/ember-frontend.development.log" afterPath="$PROJECT_DIR$/log/ember-frontend.development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/ember-cli/apps/frontend/assets/frontend.js" afterPath="$PROJECT_DIR$/tmp/ember-cli/apps/frontend/assets/frontend.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/ember-cli/apps/frontend/assets/frontend.map" afterPath="$PROJECT_DIR$/tmp/ember-cli/apps/frontend/assets/frontend.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/pids/server.pid" afterPath="$PROJECT_DIR$/tmp/pids/server.pid" />
     </list>
     <ignored path="emberBlogTwo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +30,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/emberBlogTwo@Development__emberBlogTwo.coverage" NAME="Development: emberBlogTwo Coverage Results" MODIFIED="1464867783193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="emberBlogTwo" />
-    <SUITE FILE_PATH="coverage/emberBlogBack@Development__emberBlogTwo.coverage" NAME="Development: emberBlogTwo Coverage Results" MODIFIED="1464955518744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="emberBlogTwo" />
+    <SUITE FILE_PATH="coverage/emberBlogBack@Development__emberBlogTwo.coverage" NAME="Development: emberBlogTwo Coverage Results" MODIFIED="1465374850095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="emberBlogTwo" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -38,78 +44,8 @@
       <file leaf-file-name="router.coffee" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/app/router.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.emblem" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/app/templates/articles/new.emblem">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/app/routes/articles/new.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/app/controllers/articles/new.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/app/routes/articles/edit.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/app/routes/articles/index.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.coffee" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/app/controllers/articles/edit.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.emblem" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/app/templates/articles/show.emblem">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="200">
+              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -118,18 +54,58 @@
       <file leaf-file-name="edit.emblem" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/app/templates/articles/edit.emblem">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="200">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/app/routes/articles/show.coffee">
+      <file leaf-file-name="edit.coffee" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/app/routes/articles/edit.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="43" />
+            <state relative-caret-position="140">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.coffee" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/app/controllers/articles/edit.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.coffee" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/app/controllers/articles/new.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="37" selection-start-line="5" selection-start-column="5" selection-end-line="6" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.emblem" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/app/templates/articles/new.emblem">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.coffee" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/app/routes/articles/new.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,8 +130,8 @@
         <option value="$PROJECT_DIR$/frontend/app/routes/articles/show.coffee" />
         <option value="$PROJECT_DIR$/frontend/app/templates/articles/index.emblem" />
         <option value="$PROJECT_DIR$/frontend/app/templates/articles/show.emblem" />
-        <option value="$PROJECT_DIR$/frontend/app/templates/articles/edit.emblem" />
         <option value="$PROJECT_DIR$/frontend/app/router.coffee" />
+        <option value="$PROJECT_DIR$/frontend/app/templates/articles/edit.emblem" />
         <option value="$PROJECT_DIR$/frontend/app/routes/articles/edit.coffee" />
         <option value="$PROJECT_DIR$/frontend/app/controllers/articles/edit.coffee" />
       </list>
@@ -176,9 +152,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1375" />
-    <option name="height" value="904" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -205,6 +181,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -401,9 +380,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -598,18 +574,19 @@
       <workItem from="1464697825961" duration="295000" />
       <workItem from="1464701057364" duration="25239000" />
       <workItem from="1464867093860" duration="5405000" />
-      <workItem from="1464953402197" duration="3819000" />
+      <workItem from="1464953402197" duration="4604000" />
+      <workItem from="1465374294285" duration="6920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35215000" />
+    <option name="totallyTimeSpent" value="42920000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1375" height="904" extended-state="6" />
+    <frame x="65" y="24" width="1375" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20993228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21294206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947233" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -667,7 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -730,7 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,7 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -917,7 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -932,7 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -940,23 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app/templates/articles/new.emblem">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app/routes/articles/new.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,30 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app/router.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app/routes/articles/show.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app/routes/articles/edit.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1000,15 +931,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app/templates/articles/edit.emblem">
+    <entry file="file://$PROJECT_DIR$/frontend/app/routes/articles/show.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        <state relative-caret-position="60">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app/controllers/articles/new.coffee">
+    <entry file="file://$PROJECT_DIR$/frontend/app/routes/articles/new.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -1016,10 +947,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/app/templates/articles/new.emblem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/app/controllers/articles/new.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="37" selection-start-line="5" selection-start-column="5" selection-end-line="6" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/app/router.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/app/templates/articles/edit.emblem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/app/routes/articles/edit.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/app/controllers/articles/edit.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="120">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
           <folding />
         </state>
       </provider>
