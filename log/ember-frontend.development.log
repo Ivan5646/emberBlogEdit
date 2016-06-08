@@ -2358,3 +2358,570 @@ Slowest Trees (cumulative)                    | Total (avg)
 Babel (13)                                    | 54ms (4 ms)         
 CoffeeScriptFilter (2)                        | 39ms (19 ms)        
 
+file added templates/articles/show.emblem___jb_tmp___
+file changed templates/articles/show.emblem___jb_tmp___
+file deleted templates/articles/show.emblem___jb_tmp___
+file changed templates/articles/show.emblem
+
+Build successful - 1113ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 77ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 112ms (8 ms)        
+CoffeeScriptFilter (2)                        | 84ms (42 ms)        
+TemplateCompiler (3)                          | 78ms (26 ms)        
+
+file added templates/articles/show.emblem___jb_tmp___
+file changed templates/articles/show.emblem___jb_tmp___
+file deleted templates/articles/show.emblem___jb_tmp___
+file changed templates/articles/show.emblem
+
+Build successful - 347ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Babel                                         | 39ms                
+CoffeeScriptFilter                            | 29ms                
+TemplateCompiler                              | 27ms                
+TreeMerger (app)                              | 19ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 62ms (4 ms)         
+CoffeeScriptFilter (2)                        | 35ms (17 ms)        
+TemplateCompiler (3)                          | 34ms (11 ms)        
+TreeMerger (app) (1)                          | 19ms                
+
+file added templates/articles/show.emblem___jb_tmp___
+file changed templates/articles/show.emblem___jb_tmp___
+file deleted templates/articles/show.emblem___jb_tmp___
+file changed templates/articles/show.emblem
+
+Build successful - 307ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Babel                                         | 50ms                
+CoffeeScriptFilter                            | 33ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 75ms (5 ms)         
+CoffeeScriptFilter (2)                        | 38ms (19 ms)        
+TemplateCompiler (3)                          | 15ms (5 ms)         
+
+file added templates/articles/Untitled Folder
+
+Build successful - 369ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 146ms               
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 152ms (76 ms)       
+Babel (13)                                    | 24ms (1 ms)         
+TemplateCompiler (3)                          | 21ms (7 ms)         
+
+file deleted templates/articles/Untitled Folder
+file added templates/articles/edit
+
+Build successful - 294ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 70ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 75ms (37 ms)        
+Babel (13)                                    | 28ms (2 ms)         
+Funnel: Addon JS (7)                          | 15ms (2 ms)         
+
+file deleted templates/articles/edit.emblem
+file added templates/articles/edit/edit.emblem
+
+Build successful - 200ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Babel                                         | 31ms                
+CoffeeScriptFilter                            | 20ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 47ms (3 ms)         
+CoffeeScriptFilter (2)                        | 24ms (12 ms)        
+TemplateCompiler (3)                          | 15ms (5 ms)         
+
+file deleted templates/articles/edit/edit.emblem
+file added templates/articles/edit.emblem
+
+Build successful - 313ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 44ms                
+TemplateCompiler                              | 27ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 50ms (25 ms)        
+Babel (13)                                    | 32ms (2 ms)         
+TemplateCompiler (3)                          | 32ms (10 ms)        
+
+file deleted templates/articles/edit
+file added templates/articles/show.emblem___jb_tmp___
+file changed templates/articles/show.emblem___jb_tmp___
+file deleted templates/articles/show.emblem___jb_tmp___
+file changed templates/articles/show.emblem
+version: 2.4.2
+Could not start watchman; falling back to NodeWatcher for file system events.
+Visit http://www.ember-cli.com/user-guide/#watchman for more info.
+BuildingBuilding.Building..Building...BuildingBuilding.Building..Building...
+
+Build successful - 3627ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Babel                                         | 353ms               
+SourceMapConcat: Concat: Vendor /assets/ve... | 314ms               
+JSHint app- QUnit                             | 244ms               
+TemplateCompiler                              | 241ms               
+Babel                                         | 233ms               
+TreeMerger (appJS  & processedEmberCLITree)   | 205ms               
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 1224ms (94 ms)      
+SourceMapConcat: Concat: Vendor /asset... (1) | 314ms               
+TemplateCompiler (3)                          | 303ms (101 ms)      
+JSHint app- QUnit (1)                         | 244ms               
+TreeMerger (appJS  & processedEmberCLI... (1) | 205ms               
+
+file added router.coffee___jb_tmp___
+file changed router.coffee___jb_tmp___
+file added router.coffee___jb_old___
+file deleted router.coffee___jb_tmp___
+file changed router.coffee
+file deleted router.coffee___jb_old___
+
+Build successful - 416ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Babel                                         | 103ms               
+CoffeeScriptFilter                            | 37ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 132ms (10 ms)       
+CoffeeScriptFilter (2)                        | 42ms (21 ms)        
+
+file added router.coffee___jb_tmp___
+file changed router.coffee___jb_tmp___
+file deleted router.coffee___jb_tmp___
+file changed router.coffee
+
+Build successful - 283ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 41ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 46ms (23 ms)        
+Babel (13)                                    | 34ms (2 ms)         
+Funnel: Addon JS (7)                          | 15ms (2 ms)         
+
+file added router.coffee___jb_tmp___
+file changed router.coffee___jb_tmp___
+file deleted router.coffee___jb_tmp___
+file changed router.coffee
+
+Build successful - 282ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 36ms                
+Babel                                         | 35ms                
+Addon#treeFor (ember-cli-emblem - addon-te... | 31ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 54ms (4 ms)         
+CoffeeScriptFilter (2)                        | 41ms (20 ms)        
+Addon#treeFor (ember-cli-emblem - addo... (1) | 31ms                
+
+file added router.coffee___jb_tmp___
+file changed router.coffee___jb_tmp___
+file deleted router.coffee___jb_tmp___
+file changed router.coffee
+
+Build successful - 277ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 40ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 45ms (22 ms)        
+Babel (13)                                    | 35ms (2 ms)         
+
+file added router.coffee___jb_tmp___
+file changed router.coffee___jb_tmp___
+file deleted router.coffee___jb_tmp___
+file changed router.coffee
+
+Build successful - 315ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 42ms                
+Babel                                         | 26ms                
+Babel                                         | 19ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 64ms (4 ms)         
+CoffeeScriptFilter (2)                        | 48ms (24 ms)        
+
+file added router.coffee___jb_tmp___
+file changed router.coffee___jb_tmp___
+file deleted router.coffee___jb_tmp___
+file changed router.coffee
+
+Build successful - 284ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 41ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 47ms (23 ms)        
+Babel (13)                                    | 47ms (3 ms)         
+
+file added templates/articles/show.emblem___jb_tmp___
+file changed templates/articles/show.emblem___jb_tmp___
+file deleted templates/articles/show.emblem___jb_tmp___
+file changed templates/articles/show.emblem
+file added templates/articles/show.emblem___jb_tmp___
+file changed templates/articles/show.emblem___jb_tmp___
+file deleted templates/articles/show.emblem___jb_tmp___
+file changed templates/articles/show.emblem
+
+Build successful - 350ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+TreeMerger (stylesAndVendor)                  | 22ms                
+CoffeeScriptFilter                            | 21ms                
+TreeMerger (preprocessedApp & templates)      | 18ms                
+TreeMerger (tests)                            | 18ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 41ms (3 ms)         
+CoffeeScriptFilter (2)                        | 28ms (14 ms)        
+TreeMerger (stylesAndVendor) (1)              | 22ms                
+TreeMerger (preprocessedApp & templates) (1)  | 18ms                
+TreeMerger (tests) (1)                        | 18ms                
+
+file added templates/articles/show.emblem___jb_tmp___
+file changed templates/articles/show.emblem___jb_tmp___
+file deleted templates/articles/show.emblem___jb_tmp___
+file changed templates/articles/show.emblem
+file added router.coffee___jb_tmp___
+file changed router.coffee___jb_tmp___
+file added router.coffee___jb_old___
+file deleted router.coffee
+file added router.coffee
+file deleted router.coffee___jb_tmp___
+file changed router.coffee
+file deleted router.coffee___jb_old___
+
+Build successful - 743ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Babel                                         | 81ms                
+CoffeeScriptFilter                            | 69ms                
+TemplateCompiler                              | 51ms                
+TreeMerger (templates)                        | 43ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 139ms (10 ms)       
+TemplateCompiler (3)                          | 81ms (27 ms)        
+CoffeeScriptFilter (2)                        | 76ms (38 ms)        
+TreeMerger (templates) (1)                    | 43ms                
+
+file added controllers/articles/new.coffee___jb_tmp___
+file changed controllers/articles/new.coffee___jb_tmp___
+file deleted controllers/articles/new.coffee___jb_tmp___
+file changed controllers/articles/new.coffee
+
+Build successful - 298ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 38ms                
+BroccoliMergeTrees                            | 25ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 43ms (21 ms)        
+Babel (13)                                    | 33ms (2 ms)         
+BroccoliMergeTrees (4)                        | 31ms (7 ms)         
+
+file added controllers/articles/new.coffee___jb_tmp___
+file changed controllers/articles/new.coffee___jb_tmp___
+file deleted controllers/articles/new.coffee___jb_tmp___
+file changed controllers/articles/new.coffee
+
+Build successful - 227ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 29ms                
+TreeMerger (app)                              | 16ms                
+Babel                                         | 15ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 34ms (17 ms)        
+Babel (13)                                    | 33ms (2 ms)         
+TreeMerger (app) (1)                          | 16ms                
+
+file added controllers/articles/new.coffee___jb_tmp___
+file changed controllers/articles/new.coffee___jb_tmp___
+file deleted controllers/articles/new.coffee___jb_tmp___
+file changed controllers/articles/new.coffee
+
+Build successful - 232ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 36ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 40ms (20 ms)        
+Babel (13)                                    | 28ms (2 ms)         
+
+file added controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee___jb_tmp___
+file deleted controllers/articles/edit.coffee___jb_tmp___
+file changed controllers/articles/edit.coffee
+
+Build successful - 220ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 30ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 35ms (17 ms)        
+Babel (13)                                    | 25ms (1 ms)         
+
+file added templates/articles/edit.emblem___jb_tmp___
+file changed templates/articles/edit.emblem___jb_tmp___
+file deleted templates/articles/edit.emblem___jb_tmp___
+file changed templates/articles/edit.emblem
+file added router.coffee___jb_tmp___
+file changed router.coffee___jb_tmp___
+file deleted router.coffee___jb_tmp___
+file changed router.coffee
+file added routes/article.coffee
+file changed routes/article.coffee
+file added router.coffee___jb_tmp___
+file changed router.coffee___jb_tmp___
+file deleted router.coffee___jb_tmp___
+file changed router.coffee
+file added routes/article
+file deleted routes/articles/edit.coffee
+file added routes/article/edit.coffee
+file added routes/article/index.coffee
+file changed routes/article/index.coffee
+file added routes/article/edit.coffee___jb_tmp___
+file changed routes/article/edit.coffee___jb_tmp___
+file deleted routes/article/edit.coffee___jb_tmp___
+file changed routes/article/edit.coffee
+file added templates/article
+file deleted templates/articles/edit.emblem
+file added templates/article/edit.emblem
+file added routes/article/index.coffee___jb_tmp___
+file changed routes/article/index.coffee___jb_tmp___
+file deleted routes/article/index.coffee___jb_tmp___
+file changed routes/article/index.coffee
+file added routes/article/edit.coffee___jb_tmp___
+file changed routes/article/edit.coffee___jb_tmp___
+file deleted routes/article/edit.coffee___jb_tmp___
+file changed routes/article/edit.coffee
+file deleted templates/articles/show.emblem
+file added templates/article/show.emblem
+file deleted templates/article/show.emblem
+file added templates/article/index.emblem
+file added router.coffee___jb_tmp___
+file changed router.coffee___jb_tmp___
+file deleted router.coffee___jb_tmp___
+file changed router.coffee
+
+Build successful - 416ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Babel                                         | 154ms               
+CoffeeScriptFilter                            | 49ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 180ms (13 ms)       
+CoffeeScriptFilter (2)                        | 53ms (26 ms)        
+
+file added templates/articles/index.emblem___jb_tmp___
+file changed templates/articles/index.emblem___jb_tmp___
+file deleted templates/articles/index.emblem___jb_tmp___
+file changed templates/articles/index.emblem
+file added templates/article/index.emblem___jb_tmp___
+file changed templates/article/index.emblem___jb_tmp___
+file deleted templates/article/index.emblem___jb_tmp___
+file changed templates/article/index.emblem
+
+Build successful - 407ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Babel                                         | 82ms                
+CoffeeScriptFilter                            | 69ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 112ms (8 ms)        
+CoffeeScriptFilter (2)                        | 88ms (44 ms)        
+TemplateCompiler (3)                          | 20ms (6 ms)         
+
+file added components/article-form.js
+file changed components/article-form.js
+file added templates/components/article-form.emblem
+file added integration
+
+Build successful - 1693ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Babel                                         | 142ms               
+SourceMapConcat: Concat: App                  | 115ms               
+CoffeeScriptFilter                            | 91ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 362ms (27 ms)       
+CoffeeScriptFilter (2)                        | 148ms (74 ms)       
+SourceMapConcat: Concat: App (1)              | 115ms               
+TemplateCompiler (3)                          | 101ms (33 ms)       
+
+
+Build successful - 247ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+TreeMerger (addons)                           | 43ms                
+CoffeeScriptFilter                            | 25ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+TreeMerger (addons) (1)                       | 43ms                
+CoffeeScriptFilter (2)                        | 30ms (15 ms)        
+Babel (13)                                    | 27ms (2 ms)         
+
+file added components/article-form.js___jb_tmp___
+file changed components/article-form.js___jb_tmp___
+file deleted components/article-form.js___jb_tmp___
+file changed components/article-form.js
+file added components/article-form.js___jb_tmp___
+file changed components/article-form.js___jb_tmp___
+file deleted components/article-form.js___jb_tmp___
+file changed components/article-form.js
+file added templates/components/article-form.emblem___jb_tmp___
+file changed templates/components/article-form.emblem___jb_tmp___
+file deleted templates/components/article-form.emblem___jb_tmp___
+file changed templates/components/article-form.emblem
+
+Build successful - 347ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Babel                                         | 59ms                
+TreeMerge (public)                            | 33ms                
+CoffeeScriptFilter                            | 26ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 91ms (7 ms)         
+TreeMerge (public) (1)                        | 33ms                
+CoffeeScriptFilter (2)                        | 31ms (15 ms)        
+
+file added templates/components/article-form.emblem___jb_tmp___
+file changed templates/components/article-form.emblem___jb_tmp___
+file deleted templates/components/article-form.emblem___jb_tmp___
+file changed templates/components/article-form.emblem
+
+Build successful - 429ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Babel                                         | 78ms                
+CoffeeScriptFilter                            | 34ms                
+TreeMerger (addon-test-support)               | 32ms                
+Funnel: Funnel (lint tests)                   | 21ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Babel (13)                                    | 105ms (8 ms)        
+CoffeeScriptFilter (2)                        | 40ms (20 ms)        
+TreeMerger (addon-test-support) (1)           | 32ms                
+Funnel: Funnel (lint tests) (1)               | 21ms                
+
+file changed templates/components/article-form.emblem
+
+Build successful - 5042ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+SourceMapConcat: Concat: App                  | 332ms               
+CoffeeScriptFilter                            | 304ms               
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Funnel: Addon JS (7)                          | 454ms (64 ms)       
+CoffeeScriptFilter (2)                        | 408ms (204 ms)      
+Babel (13)                                    | 394ms (30 ms)       
+SourceMapConcat: Concat: App (1)              | 332ms               
+
+file added templates/components/article-form.emblem___jb_tmp___
+file changed templates/components/article-form.emblem___jb_tmp___
+file deleted templates/components/article-form.emblem___jb_tmp___
+file changed templates/components/article-form.emblem
+
+Build successful - 205ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+CoffeeScriptFilter                            | 26ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+CoffeeScriptFilter (2)                        | 31ms (15 ms)        
+Babel (13)                                    | 23ms (1 ms)         
+TemplateCompiler (3)                          | 11ms (3 ms)         
+

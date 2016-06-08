@@ -3,7 +3,7 @@
 ArticlesNewController = Ember.Controller.extend
   actions:
     edit: ->
-      @model.save(@model.title, @model.text).then =>
+      @model.save().then =>
         @transitionToRoute 'articles'
 
 

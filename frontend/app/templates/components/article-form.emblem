@@ -1,8 +1,4 @@
-h3 Edit
-
-= customField
-
-form{action 'edit' on='submit'}
+form{action 'save' on='submit' class="article_form"}
   .field class=model.errors.title:error
     label Title
     = input value=model.title
@@ -11,3 +7,10 @@ form{action 'edit' on='submit'}
     = input value=model.text
   button type='submit'
     | save
+
+
+
+
+<h1>{{title}}</h1>
+  <p>{{yield}}</p>
+  <p>Edit title: {{input type="text" value=title}}</p>

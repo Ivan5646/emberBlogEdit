@@ -7,6 +7,15 @@ define('frontend/tests/adapters/application.jshint', ['exports'], function (expo
     assert.ok(true, 'adapters/application.js should pass jshint.');
   });
 });
+define('frontend/tests/components/article-form.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint - components/article-form.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'components/article-form.js should pass jshint.');
+  });
+});
 define('frontend/tests/helpers/destroy-app', ['exports', 'ember'], function (exports, _ember) {
   exports['default'] = destroyApp;
 
@@ -100,6 +109,140 @@ define('frontend/tests/helpers/start-app.jshint', ['exports'], function (exports
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'helpers/start-app.js should pass jshint.');
+  });
+});
+define('frontend/tests/integration/components/article-form-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+  (0, _emberQunit.moduleForComponent)('article-form', 'Integration | Component | article form', {
+    integration: true
+  });
+
+  (0, _emberQunit.test)('it renders', function (assert) {
+    assert.expect(2);
+    this.render(Ember.HTMLBars.template((function () {
+      return {
+        meta: {
+          'fragmentReason': {
+            'name': 'missing-wrapper',
+            'problems': ['wrong-type']
+          },
+          'revision': 'Ember@2.4.5',
+          'loc': {
+            'source': null,
+            'start': {
+              'line': 1,
+              'column': 0
+            },
+            'end': {
+              'line': 1,
+              'column': 16
+            }
+          }
+        },
+        isEmpty: false,
+        arity: 0,
+        cachedFragment: null,
+        hasRendered: false,
+        buildFragment: function buildFragment(dom) {
+          var el0 = dom.createDocumentFragment();
+          var el1 = dom.createComment('');
+          dom.appendChild(el0, el1);
+          return el0;
+        },
+        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+          var morphs = new Array(1);
+          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
+          dom.insertBoundary(fragment, 0);
+          dom.insertBoundary(fragment, null);
+          return morphs;
+        },
+        statements: [['content', 'article-form', ['loc', [null, [1, 0], [1, 16]]]]],
+        locals: [],
+        templates: []
+      };
+    })()));
+    assert.equal(this.$().text().trim(), '');
+    this.render(Ember.HTMLBars.template((function () {
+      var child0 = (function () {
+        return {
+          meta: {
+            'fragmentReason': {
+              'name': 'missing-wrapper',
+              'problems': ['wrong-type']
+            },
+            'revision': 'Ember@2.4.5',
+            'loc': {
+              'source': null,
+              'start': {
+                'line': 1,
+                'column': 0
+              },
+              'end': {
+                'line': 3,
+                'column': 0
+              }
+            }
+          },
+          isEmpty: false,
+          arity: 0,
+          cachedFragment: null,
+          hasRendered: false,
+          buildFragment: function buildFragment(dom) {
+            var el0 = dom.createDocumentFragment();
+            var el1 = dom.createTextNode('  template block text\n');
+            dom.appendChild(el0, el1);
+            return el0;
+          },
+          buildRenderNodes: function buildRenderNodes() {
+            return [];
+          },
+          statements: [],
+          locals: [],
+          templates: []
+        };
+      })();
+
+      return {
+        meta: {
+          'fragmentReason': {
+            'name': 'missing-wrapper',
+            'problems': ['wrong-type']
+          },
+          'revision': 'Ember@2.4.5',
+          'loc': {
+            'source': null,
+            'start': {
+              'line': 1,
+              'column': 0
+            },
+            'end': {
+              'line': 3,
+              'column': 17
+            }
+          }
+        },
+        isEmpty: false,
+        arity: 0,
+        cachedFragment: null,
+        hasRendered: false,
+        buildFragment: function buildFragment(dom) {
+          var el0 = dom.createDocumentFragment();
+          var el1 = dom.createComment('');
+          dom.appendChild(el0, el1);
+          return el0;
+        },
+        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+          var morphs = new Array(1);
+          morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
+          dom.insertBoundary(fragment, 0);
+          dom.insertBoundary(fragment, null);
+          return morphs;
+        },
+        statements: [['block', 'article-form', [], [], 0, null, ['loc', [null, [1, 0], [3, 17]]]]],
+        locals: [],
+        templates: [child0]
+      };
+    })()));
+    return assert.equal(this.$().text().trim(), 'template block text');
   });
 });
 define('frontend/tests/test-helper', ['exports', 'frontend/tests/helpers/resolver', 'ember-qunit'], function (exports, _frontendTestsHelpersResolver, _emberQunit) {

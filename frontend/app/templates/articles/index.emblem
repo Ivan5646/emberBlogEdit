@@ -2,7 +2,7 @@ h3 Articles:
 
 each model as |article|
   p
-    link-to 'articles.show' article.id
+    link-to 'article' article.id
       = article.title
 
 

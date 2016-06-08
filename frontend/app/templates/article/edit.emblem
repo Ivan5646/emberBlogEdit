@@ -1,0 +1,11 @@
+h3 Edit
+
+form{action 'edit' on='submit'}
+  .field class=model.errors.title:error
+    label Title
+    = input value=model.title
+  .field
+    label Text
+    = input value=model.text
+  button type='submit'
+    | save

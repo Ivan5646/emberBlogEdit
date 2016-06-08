@@ -36,6 +36,9 @@ define('frontend/components/app-version', ['exports', 'ember-cli-app-version/com
     name: name
   });
 });
+define('frontend/components/article-form', ['exports', 'ember'], function (exports, _ember) {
+  exports['default'] = _ember['default'].Component.extend({});
+});
 define('frontend/components/article-row', ['exports', 'ember'], function (exports, _ember) {
   var ArticleRow;
 
@@ -55,7 +58,7 @@ define('frontend/controllers/articles/edit', ['exports', 'ember'], function (exp
   ArticlesNewController = _ember['default'].Controller.extend({
     actions: {
       edit: function edit() {
-        return this.model.save(this.model.title, this.model.text).then((function (_this) {
+        return this.model.save().then((function (_this) {
           return function () {
             return _this.transitionToRoute('articles');
           };
@@ -314,20 +317,41 @@ define('frontend/router', ['exports', 'ember', 'frontend/config/environment'], f
   });
 
   Router.map(function () {
-    return this.route('articles', function () {
-      this.route('new');
-      this.route('show', {
-        path: ':id'
-      });
-      return this.route('edit', {
-        path: 'edit/:id'
-      });
+    this.route('articles', function () {
+      return this.route('new');
+    });
+    return this.route('article', {
+      path: '/articles/:id'
+    }, function () {
+      return this.route('edit');
     });
   });
 
   exports['default'] = Router;
 });
-define('frontend/routes/articles/edit', ['exports', 'ember'], function (exports, _ember) {
+define('frontend/routes/article/edit', ['exports', 'ember'], function (exports, _ember) {
+  var ArticlesRoute;
+
+  ArticlesRoute = _ember['default'].Route.extend({
+    model: function model() {
+      return this.modelFor('article');
+    }
+  });
+
+  exports['default'] = ArticlesRoute;
+});
+define('frontend/routes/article/index', ['exports', 'ember'], function (exports, _ember) {
+  var ArticlesRoute;
+
+  ArticlesRoute = _ember['default'].Route.extend({
+    model: function model() {
+      return this.modelFor('article');
+    }
+  });
+
+  exports['default'] = ArticlesRoute;
+});
+define('frontend/routes/article', ['exports', 'ember'], function (exports, _ember) {
   var ArticlesRoute;
 
   ArticlesRoute = _ember['default'].Route.extend({
@@ -515,13 +539,13 @@ define("frontend/templates/application", ["exports"], function (exports) {
     };
   })());
 });
-define("frontend/templates/articles/edit", ["exports"], function (exports) {
+define("frontend/templates/article/edit", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
     return {
       meta: {
         "fragmentReason": {
           "name": "missing-wrapper",
-          "problems": ["multiple-nodes", "wrong-type"]
+          "problems": ["multiple-nodes"]
         },
         "revision": "Ember@2.4.5",
         "loc": {
@@ -532,10 +556,10 @@ define("frontend/templates/articles/edit", ["exports"], function (exports) {
           },
           "end": {
             "line": 1,
-            "column": 282
+            "column": 267
           }
         },
-        "moduleName": "frontend/templates/articles/edit.hbs"
+        "moduleName": "frontend/templates/article/edit.hbs"
       },
       isEmpty: false,
       arity: 0,
@@ -546,8 +570,6 @@ define("frontend/templates/articles/edit", ["exports"], function (exports) {
         var el1 = dom.createElement("h3");
         var el2 = dom.createTextNode("Edit");
         dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createElement("form");
         var el2 = dom.createElement("div");
@@ -576,19 +598,109 @@ define("frontend/templates/articles/edit", ["exports"], function (exports) {
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element0 = dom.childAt(fragment, [2]);
+        var element0 = dom.childAt(fragment, [1]);
         var element1 = dom.childAt(element0, [0]);
-        var morphs = new Array(5);
-        morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
-        morphs[1] = dom.createElementMorph(element0);
-        morphs[2] = dom.createAttrMorph(element1, 'class');
-        morphs[3] = dom.createMorphAt(element1, 1, 1);
-        morphs[4] = dom.createMorphAt(dom.childAt(element0, [1]), 1, 1);
+        var morphs = new Array(4);
+        morphs[0] = dom.createElementMorph(element0);
+        morphs[1] = dom.createAttrMorph(element1, 'class');
+        morphs[2] = dom.createMorphAt(element1, 1, 1);
+        morphs[3] = dom.createMorphAt(dom.childAt(element0, [1]), 1, 1);
         return morphs;
       },
-      statements: [["content", "customField", ["loc", [null, [1, 13], [1, 28]]]], ["element", "action", ["edit"], ["on", "submit"], ["loc", [null, [1, 34], [1, 63]]]], ["attribute", "class", ["concat", ["field ", ["subexpr", "if", [["get", "model.errors.title", ["loc", [null, [1, 87], [1, 105]]]], "error"], [], ["loc", [null, [1, 82], [1, 115]]]]]]], ["inline", "input", [], ["value", ["subexpr", "@mut", [["get", "model.title", ["loc", [null, [1, 151], [1, 162]]]]], [], []]], ["loc", [null, [1, 137], [1, 164]]]], ["inline", "input", [], ["value", ["subexpr", "@mut", [["get", "model.text", ["loc", [null, [1, 222], [1, 232]]]]], [], []]], ["loc", [null, [1, 208], [1, 234]]]]],
+      statements: [["element", "action", ["edit"], ["on", "submit"], ["loc", [null, [1, 19], [1, 48]]]], ["attribute", "class", ["concat", ["field ", ["subexpr", "if", [["get", "model.errors.title", ["loc", [null, [1, 72], [1, 90]]]], "error"], [], ["loc", [null, [1, 67], [1, 100]]]]]]], ["inline", "input", [], ["value", ["subexpr", "@mut", [["get", "model.title", ["loc", [null, [1, 136], [1, 147]]]]], [], []]], ["loc", [null, [1, 122], [1, 149]]]], ["inline", "input", [], ["value", ["subexpr", "@mut", [["get", "model.text", ["loc", [null, [1, 207], [1, 217]]]]], [], []]], ["loc", [null, [1, 193], [1, 219]]]]],
       locals: [],
       templates: []
+    };
+  })());
+});
+define("frontend/templates/article/index", ["exports"], function (exports) {
+  exports["default"] = Ember.HTMLBars.template((function () {
+    var child0 = (function () {
+      return {
+        meta: {
+          "fragmentReason": false,
+          "revision": "Ember@2.4.5",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 1,
+              "column": 48
+            },
+            "end": {
+              "line": 1,
+              "column": 90
+            }
+          },
+          "moduleName": "frontend/templates/article/index.hbs"
+        },
+        isEmpty: false,
+        arity: 0,
+        cachedFragment: null,
+        hasRendered: false,
+        buildFragment: function buildFragment(dom) {
+          var el0 = dom.createDocumentFragment();
+          var el1 = dom.createTextNode(" Edit ");
+          dom.appendChild(el0, el1);
+          return el0;
+        },
+        buildRenderNodes: function buildRenderNodes() {
+          return [];
+        },
+        statements: [],
+        locals: [],
+        templates: []
+      };
+    })();
+    return {
+      meta: {
+        "fragmentReason": {
+          "name": "missing-wrapper",
+          "problems": ["multiple-nodes"]
+        },
+        "revision": "Ember@2.4.5",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 1,
+            "column": 106
+          }
+        },
+        "moduleName": "frontend/templates/article/index.hbs"
+      },
+      isEmpty: false,
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createElement("h3");
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("p");
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("p");
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var morphs = new Array(3);
+        morphs[0] = dom.createMorphAt(dom.childAt(fragment, [0]), 0, 0);
+        morphs[1] = dom.createMorphAt(dom.childAt(fragment, [1]), 0, 0);
+        morphs[2] = dom.createMorphAt(dom.childAt(fragment, [2]), 0, 0);
+        return morphs;
+      },
+      statements: [["content", "model.title", ["loc", [null, [1, 4], [1, 19]]]], ["content", "model.text", ["loc", [null, [1, 27], [1, 41]]]], ["block", "link-to", ["article.edit", ["get", "model.id", ["loc", [null, [1, 74], [1, 82]]]]], [], 0, null, ["loc", [null, [1, 48], [1, 102]]]]],
+      locals: [],
+      templates: [child0]
     };
   })());
 });
@@ -608,7 +720,7 @@ define("frontend/templates/articles/index", ["exports"], function (exports) {
               },
               "end": {
                 "line": 1,
-                "column": 105
+                "column": 99
               }
             },
             "moduleName": "frontend/templates/articles/index.hbs"
@@ -630,7 +742,7 @@ define("frontend/templates/articles/index", ["exports"], function (exports) {
             dom.insertBoundary(fragment, null);
             return morphs;
           },
-          statements: [["content", "article.title", ["loc", [null, [1, 88], [1, 105]]]]],
+          statements: [["content", "article.title", ["loc", [null, [1, 82], [1, 99]]]]],
           locals: [],
           templates: []
         };
@@ -647,7 +759,7 @@ define("frontend/templates/articles/index", ["exports"], function (exports) {
             },
             "end": {
               "line": 1,
-              "column": 121
+              "column": 115
             }
           },
           "moduleName": "frontend/templates/articles/index.hbs"
@@ -669,7 +781,7 @@ define("frontend/templates/articles/index", ["exports"], function (exports) {
           morphs[0] = dom.createMorphAt(dom.childAt(fragment, [0]), 0, 0);
           return morphs;
         },
-        statements: [["block", "link-to", ["articles.show", ["get", "article.id", ["loc", [null, [1, 76], [1, 86]]]]], [], 0, null, ["loc", [null, [1, 49], [1, 117]]]]],
+        statements: [["block", "link-to", ["article", ["get", "article.id", ["loc", [null, [1, 70], [1, 80]]]]], [], 0, null, ["loc", [null, [1, 49], [1, 111]]]]],
         locals: ["article"],
         templates: [child0]
       };
@@ -689,7 +801,7 @@ define("frontend/templates/articles/index", ["exports"], function (exports) {
           },
           "end": {
             "line": 1,
-            "column": 130
+            "column": 124
           }
         },
         "moduleName": "frontend/templates/articles/index.hbs"
@@ -714,7 +826,7 @@ define("frontend/templates/articles/index", ["exports"], function (exports) {
         dom.insertBoundary(fragment, null);
         return morphs;
       },
-      statements: [["block", "each", [["get", "model", ["loc", [null, [1, 26], [1, 31]]]]], [], 0, null, ["loc", [null, [1, 18], [1, 130]]]]],
+      statements: [["block", "each", [["get", "model", ["loc", [null, [1, 26], [1, 31]]]]], [], 0, null, ["loc", [null, [1, 18], [1, 124]]]]],
       locals: [],
       templates: [child0]
     };
@@ -797,97 +909,6 @@ define("frontend/templates/articles/new", ["exports"], function (exports) {
     };
   })());
 });
-define("frontend/templates/articles/show", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template((function () {
-    var child0 = (function () {
-      return {
-        meta: {
-          "fragmentReason": false,
-          "revision": "Ember@2.4.5",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 1,
-              "column": 48
-            },
-            "end": {
-              "line": 1,
-              "column": 82
-            }
-          },
-          "moduleName": "frontend/templates/articles/show.hbs"
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode(" Edit ");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes() {
-          return [];
-        },
-        statements: [],
-        locals: [],
-        templates: []
-      };
-    })();
-    return {
-      meta: {
-        "fragmentReason": {
-          "name": "missing-wrapper",
-          "problems": ["multiple-nodes"]
-        },
-        "revision": "Ember@2.4.5",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 1,
-            "column": 98
-          }
-        },
-        "moduleName": "frontend/templates/articles/show.hbs"
-      },
-      isEmpty: false,
-      arity: 0,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createElement("h3");
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("p");
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("p");
-        var el2 = dom.createComment("");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(3);
-        morphs[0] = dom.createMorphAt(dom.childAt(fragment, [0]), 0, 0);
-        morphs[1] = dom.createMorphAt(dom.childAt(fragment, [1]), 0, 0);
-        morphs[2] = dom.createMorphAt(dom.childAt(fragment, [2]), 0, 0);
-        return morphs;
-      },
-      statements: [["content", "model.title", ["loc", [null, [1, 4], [1, 19]]]], ["content", "model.text", ["loc", [null, [1, 27], [1, 41]]]], ["block", "link-to", ["articles.edit"], [], 0, null, ["loc", [null, [1, 48], [1, 94]]]]],
-      locals: [],
-      templates: [child0]
-    };
-  })());
-});
 define("frontend/templates/articles", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
     return {
@@ -928,6 +949,99 @@ define("frontend/templates/articles", ["exports"], function (exports) {
         return morphs;
       },
       statements: [["content", "outlet", ["loc", [null, [1, 0], [1, 10]]]]],
+      locals: [],
+      templates: []
+    };
+  })());
+});
+define("frontend/templates/components/article-form", ["exports"], function (exports) {
+  exports["default"] = Ember.HTMLBars.template((function () {
+    return {
+      meta: {
+        "fragmentReason": {
+          "name": "missing-wrapper",
+          "problems": ["multiple-nodes"]
+        },
+        "revision": "Ember@2.4.5",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 1,
+            "column": 364
+          }
+        },
+        "moduleName": "frontend/templates/components/article-form.hbs"
+      },
+      isEmpty: false,
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createElement("form");
+        var el2 = dom.createElement("div");
+        var el3 = dom.createElement("label");
+        var el4 = dom.createTextNode("Title");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createComment("");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("div");
+        dom.setAttribute(el2, "class", "field");
+        var el3 = dom.createElement("label");
+        var el4 = dom.createTextNode("Text");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createComment("");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("button");
+        dom.setAttribute(el2, "type", "submit");
+        var el3 = dom.createTextNode("save");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("h1");
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode(" ");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("p");
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode(" ");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("p");
+        var el2 = dom.createTextNode("Edit title: ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode(" ");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var element0 = dom.childAt(fragment, [0]);
+        var element1 = dom.childAt(element0, [0]);
+        var morphs = new Array(7);
+        morphs[0] = dom.createElementMorph(element0);
+        morphs[1] = dom.createAttrMorph(element1, 'class');
+        morphs[2] = dom.createMorphAt(element1, 1, 1);
+        morphs[3] = dom.createMorphAt(dom.childAt(element0, [1]), 1, 1);
+        morphs[4] = dom.createMorphAt(dom.childAt(fragment, [1]), 0, 0);
+        morphs[5] = dom.createMorphAt(dom.childAt(fragment, [3]), 0, 0);
+        morphs[6] = dom.createMorphAt(dom.childAt(fragment, [5]), 1, 1);
+        return morphs;
+      },
+      statements: [["element", "action", ["save"], ["on", "submit", "class", "article_form"], ["loc", [null, [1, 6], [1, 56]]]], ["attribute", "class", ["concat", ["field ", ["subexpr", "if", [["get", "model.errors.title", ["loc", [null, [1, 80], [1, 98]]]], "error"], [], ["loc", [null, [1, 75], [1, 108]]]]]]], ["inline", "input", [], ["value", ["subexpr", "@mut", [["get", "model.title", ["loc", [null, [1, 144], [1, 155]]]]], [], []]], ["loc", [null, [1, 130], [1, 157]]]], ["inline", "input", [], ["value", ["subexpr", "@mut", [["get", "model.text", ["loc", [null, [1, 215], [1, 225]]]]], [], []]], ["loc", [null, [1, 201], [1, 227]]]], ["content", "title", ["loc", [null, [1, 279], [1, 288]]]], ["content", "yield", ["loc", [null, [1, 297], [1, 306]]]], ["inline", "input", [], ["type", "text", "value", ["subexpr", "@mut", [["get", "title", ["loc", [null, [1, 352], [1, 357]]]]], [], []]], ["loc", [null, [1, 326], [1, 359]]]]],
       locals: [],
       templates: []
     };
@@ -990,7 +1104,7 @@ define("frontend/templates/components/article-row", ["exports"], function (expor
 /* jshint ignore:start */
 
 define('frontend/config/environment', ['ember'], function(Ember) {
-  return { 'default': {"modulePrefix":"frontend","environment":"development","baseURL":"/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"name":"frontend","version":"0.0.0+f8e16761"},"exportApplicationGlobal":true}};
+  return { 'default': {"modulePrefix":"frontend","environment":"development","baseURL":"/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"name":"frontend","version":"0.0.0+c831f549"},"exportApplicationGlobal":true}};
 });
 
 /* jshint ignore:end */
@@ -998,7 +1112,7 @@ define('frontend/config/environment', ['ember'], function(Ember) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("frontend/app")["default"].create({"name":"frontend","version":"0.0.0+f8e16761"});
+  require("frontend/app")["default"].create({"name":"frontend","version":"0.0.0+c831f549"});
 }
 
 /* jshint ignore:end */
